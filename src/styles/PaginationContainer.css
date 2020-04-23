@@ -1,0 +1,19 @@
+.pagination-container {
+    display: flex;
+    justify-content: center;
+    background-color: rgba(84, 94, 232, 1);
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    box-shadow: -2px -2px 5px rgba(0, 0, 0, .5);
+}
+
+.btn-page {
+    border: 1px solid #54ACE8;
+    color: white;
+}
+
+.btn-page:hover, .btn-page-active {
+    background-color: #54ACE8;
+}

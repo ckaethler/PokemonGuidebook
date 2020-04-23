@@ -1,0 +1,39 @@
+.PokeList-item {
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.Aligner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Aligner-item {
+  max-width: 50%;
+}
+
+#contained-modal-title {
+  text-transform: capitalize;
+}
+
+.body {
+  padding-top: 83px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-bottom: 1rem;
+}
+
+.body::after {
+  content: ""; 
+  background: url(../images/background.jpg);
+  opacity: .1;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: fixed;
+  z-index: -1;
+  background-size: cover;
+}
