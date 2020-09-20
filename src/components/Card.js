@@ -2,13 +2,23 @@ import React from 'react';
 import '../styles/Card.css';
 
 const Card = ({pokemon, openModal}) => {
+    let abilities;
+if(pokemon.abilities.length > 0) {
+    abilities = pokemon.abilities.map((ability, index) => {
+        if (index < pokemon.abilities.length - 1) {
+                return ability.ability.name + " | "
+            }
+            else return ability.ability.name;
+        })
+    } else {
+        abilities = "None";
+    }
     return (
         <div className="card">
             <div className="card-header">
+                <img className="card-img" src={pokemon.sprites.front_default} alt="" />
+                <br></br>
                 <h2 className="card-title">{pokemon.name}</h2>
-                {!(pokemon.sprites.front_default) ? '' :
-                     <img className="card-img" src={pokemon.sprites.front_default} alt="" />
-                }
             </div>
 
             <div className="card-body">
@@ -28,17 +38,12 @@ const Card = ({pokemon, openModal}) => {
                     <li className="card-listitem">
                         <h4>Abilities</h4>
                         <p>
-                            {pokemon.abilities.map((ability, index) => {
-                                if (index < pokemon.abilities.length - 1) {
-                                    return ability.ability.name + ", "
-                                }
-                                else return ability.ability.name;
-                            })}
+                            {abilities}
                         </p>
                     </li>
                 </ul>
                 <div className="card-footer">
-                    <button className="btn btn-stats" onClick={openModal}>Stats</button>
+                    <button className="btn btn-stats" onClick={openModal}>View Statistics</button>
                 </div>
             </div>
             

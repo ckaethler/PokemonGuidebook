@@ -6,9 +6,9 @@ const nextRangeText = "»";
 const prevPageText = '‹';
 const nextPageText = '›';
 const ellipsesText = '...';
-const btn_classes = "btn btn-page ";
-const btn_active_classes = btn_classes.concat("btn-page-active");
-const btn_disabled_classes = btn_classes.concat(" btn-page-disabled");
+const btn_classes = "btn ";
+const btn_active_classes = btn_classes.concat("btn-active ");
+const btn_disabled_classes = btn_classes.concat(" btn-disabled");
 
 // ---------------------------------------------------------------------------
 const btnCreate = (key, className, onClick, innerHTML, value) => {

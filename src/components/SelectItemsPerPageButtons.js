@@ -10,7 +10,7 @@ const SelectItemsPerPageButtons = ({ options, onOptionSelected, selectedValue, t
                     <button 
                         key={option} 
                         onClick={onOptionSelected} 
-                        className={selectedValue === option ? 'btn btn-limit btn-limit-active' : 'btn btn-limit'}>{option}
+                        className={selectedValue === option ? 'btn btn-active ' : 'btn '}>{option}
                     </button>
                 )
             })}
@@ -19,7 +19,7 @@ const SelectItemsPerPageButtons = ({ options, onOptionSelected, selectedValue, t
                 <button 
                     key={total_pokemon} 
                     onClick={onOptionSelected} 
-                    className={selectedValue === total_pokemon ? 'btn btn-limit btn-limit-active' : 'btn btn-limit'}>
+                    className={selectedValue === total_pokemon ? 'btn btn-active ' : 'btn '}>
                         All
                 </button> : false
             }
