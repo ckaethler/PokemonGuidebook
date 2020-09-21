@@ -3,9 +3,9 @@ import '../styles/Card.css';
 
 const Card = ({pokemon, openModal}) => {
     let abilities;
-if(pokemon.abilities.length > 0) {
-    abilities = pokemon.abilities.map((ability, index) => {
-        if (index < pokemon.abilities.length - 1) {
+    if(pokemon.abilities.length > 0) {
+        abilities = pokemon.abilities.map((ability, index) => {
+            if (index < pokemon.abilities.length - 1) {
                 return ability.ability.name + " | "
             }
             else return ability.ability.name;

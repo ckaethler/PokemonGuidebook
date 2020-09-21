@@ -1,20 +1,16 @@
 .card {
     word-wrap: break-word;
-    /* border: 2px solid #0000007c; */
     border-radius: 16px;
     margin: 2rem;
     background-color: rgb(255, 255, 255);
     width: 350px;
     display: flex;
     flex-direction: column;
-    /* justify-content: right; */
     box-shadow: 7px 7px 10px rgba(0, 0, 0, .15);
 }
 
 .card-header {
     border-radius: 16px;
-    /* display: flex; */
-    /* justify-content: space-between; */
     padding: 2rem;
     background-color: rgba(84, 172, 232, 1);
 }
@@ -23,7 +19,6 @@
     text-transform: capitalize;
     font-size: 1.5rem;
     text-align: center;
-    /* color: rgba(255, 255, 255, 1); */
 }
 
 .card-img {
@@ -37,7 +32,6 @@
 
 .card-body {
     width: 100%;
-    /* background-color: white; */
 }
 
 .card-listgroup {
