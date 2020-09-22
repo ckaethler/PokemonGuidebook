@@ -12,13 +12,14 @@
 .card-header {
     border-radius: 16px;
     padding: 2rem;
-    background-color: rgba(84, 172, 232, 1);
+    background-color: #3B4A1C;
 }
 
 .card-title {
     text-transform: capitalize;
     font-size: 1.5rem;
     text-align: center;
+    color:white;
 }
 
 .card-img {
@@ -55,10 +56,10 @@
     margin-top: 0px;
     padding: 10px;
     border-radius: 0px 0px 16px 16px;
-    background-color: rgb(72, 83, 232);
+    background-color: #824896;
     color: white;
 }
 
 .btn-stats:hover, .btn-stats-active {
-    background-color: rgba(72, 83, 232, .75);
+    background-color: rgba(130, 72, 150, .75);
 }

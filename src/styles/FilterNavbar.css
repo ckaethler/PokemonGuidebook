@@ -1,11 +1,8 @@
 .filter-navbar {
     padding-top: 83px;
-    /* background-color: rgba(0, 0, 0, .15); */
-    /* background-color: rgb(255, 255, 255); */
     display: flex;
     justify-content: space-between;
     width: 100%;
-    /* box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25); */
 }
 
 .search-bar-container {
@@ -19,7 +16,7 @@
     color: #495057;
     background-color: #fff;
     background-clip: padding-box;
-    border: 1px solid rgb(72, 83, 232);
+    border: 1px solid #824896;
     border-radius: .25rem;
     transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
@@ -34,11 +31,6 @@
     color: rgb(0, 0, 0);
 }
 
-/* 
-.btn-limit {
-
-} */
-
-.btn-limit:hover, .btn-limit-active {
-    background-color: rgb(84, 172, 232);
+.directions {
+    padding: 1rem;
 }

@@ -17,7 +17,7 @@ body {
   text-align: center;
   white-space: nowrap;
   vertical-align: middle;
-  border: 1px solid rgb(72, 83, 232);
+  border: 1px solid #824896;
   padding: .375rem .75rem;
   font-size: 1rem;
   line-height: 1.5;
@@ -26,6 +26,6 @@ body {
 }
 
 .btn:hover, .btn-active {
-  background-color: rgb(72, 83, 232);
+  background-color: #824896;
   color: white;
 }

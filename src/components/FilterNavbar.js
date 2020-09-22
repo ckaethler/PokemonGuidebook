@@ -17,6 +17,10 @@ const FilterNavbar = ({ options, selectedValue, total_pokemon,
           onOptionSelected={onOptionSelected}
         />
 
+        <div className="directions">
+          Search for your favorite Pokémon!
+        </div>
+        
         <SearchBar 
           searchfield={searchfield} 
           searchChange={searchChange} 

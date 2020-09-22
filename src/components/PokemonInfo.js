@@ -1,12 +1,11 @@
 import React from 'react';
-import { Polar } from 'react-chartjs-2'
+import { Bar } from 'react-chartjs-2'
 
 const capitalize = (str) => {
     return str.charAt(0).toUpperCase() + str.slice(1);
 }
 
 const PokemonInfo = ({pokemon}) => {
-    console.log(pokemon);
     const labels = pokemon.stats.map(info => {
         return capitalize(info.stat.name);
     });
@@ -36,7 +35,7 @@ const PokemonInfo = ({pokemon}) => {
 
     return (
         <div className="Aligner">
-            <Polar className="Aligner-item" data={chartData} width={300} height={250}/>
+            <Bar className="Aligner-item" data={chartData} width={300} height={250}/>
         </div>
     )
 }

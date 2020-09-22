@@ -11,7 +11,6 @@ const PokemonModal = ({closeModal, show, pokemon, openModal}) => {
             <div className="modal-content">
                 <div className="modal-header">
                     <h2>{!(pokemon) ? null : pokemon.name}</h2>
-                    <h2>{!(pokemon) ? null : "Basic Stats" }</h2>
                 </div>
                 <div className="modal-body">
                     {(!pokemon) ? null :
