@@ -14,28 +14,27 @@ const PokemonInfo = ({pokemon}) => {
         return info.base_stat;
     });
 
-    let chartData = {
-        label: "Base Stats",
+    const chartData = {
         labels: labels,
         datasets: [
             {
-                label: "Base Stats",
+                label: "Base Statistics",
+                backgroundColor: '#a89cac',
                 data: data,
-                backgroundColor: [
-                    "#FF298B",
-                    "#E825E0",
-                    "#CC36FF",
-                    "#8225E8",
-                    "#5529FF",
-                    "#545EE8",
-                ],
+                hoverBackgroundColor: 'rgba(255,99,132,0.4)',
+                hoverBorderColor: 'rgba(255,99,132,1)',
             }
         ],
     }
 
     return (
         <div className="Aligner">
-            <Bar className="Aligner-item" data={chartData} width={300} height={250}/>
+            <Bar 
+                className="Aligner-item" 
+                data={chartData} 
+                width={300} 
+                height={300}
+            />
         </div>
     )
 }
