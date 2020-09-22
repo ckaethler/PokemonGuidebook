@@ -18,7 +18,7 @@ const PokemonInfo = ({pokemon}) => {
         labels: labels,
         datasets: [
             {
-                label: "Base Statistics",
+                label: "Units",
                 backgroundColor: '#a89cac',
                 data: data,
                 hoverBackgroundColor: 'rgba(255,99,132,0.4)',

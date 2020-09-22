@@ -1,8 +1,6 @@
 /* The Modal (background) */
 .modal {
   position: fixed; 
-  top: 0;
-  left: 0;
   width: 100%; 
   height: 100%;
   background-color: rgba(0,0,0,0.6);
@@ -12,15 +10,8 @@
 /* Modal Content */
 .modal-content {
   border-radius: 16px;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  margin: 50px;
   background-color: rgba(255, 255, 255, 1);
-  -webkit-animation-name: animatetop;
-  -webkit-animation-duration: 0.2s;
-  animation-name: animatetop;
-  animation-duration: 0.2s
 }
 
 .display-none {
@@ -41,13 +32,16 @@
 
 .modal-body {
   padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .modal-footer {
   padding: 5px;
   color: white;
   display: flex;
-  justify-content: left;
+  justify-content: center;
 }
 
 .btn-modal-close {
@@ -64,13 +58,18 @@
   background-color: rgba(130, 72, 150, .75);
 }
 
-/* Add Animation */
-@-webkit-keyframes animatetop {
-  from {top:-300px; opacity:0} 
-  to {top:0; opacity:1}
+.statistics-table {
+  max-width: 45%;
 }
 
-@keyframes animatetop {
-  from {top:-300px; opacity:0}
-  to {top:0; opacity:1}
+.statistics-table td {
+  padding: 10px;
+}
+
+.statistics-table tr:nth-child(odd) {
+  background-color: rgb(231, 231, 231);
+}
+
+.statistics-table .header {
+  font-weight: bold;
 }
