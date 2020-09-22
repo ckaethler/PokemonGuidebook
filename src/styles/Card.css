@@ -1,46 +1,37 @@
 .card {
     word-wrap: break-word;
-    border: 2px solid #9448E8;
-    border-radius: .25rem;
+    border-radius: 16px;
     margin: 2rem;
-    background-color: #4853E8;
-    width: 400px;
+    background-color: rgb(255, 255, 255);
+    width: 350px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    box-shadow: 2px 2px 7px rgba(0, 0, 0, .5);
+    box-shadow: 7px 7px 10px rgba(0, 0, 0, .15);
 }
+
 .card-header {
-    display: flex;
-    justify-content: space-between;
-    padding: 1rem;
-    /* background-color: #4853E8; */
+    border-radius: 16px;
+    padding: 2rem;
+    background-color: #3B4A1C;
 }
 
 .card-title {
     text-transform: capitalize;
-    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+    color:white;
 }
 
 .card-img {
-    background: #7C5CFF;
+    background: rgba(255, 255, 255, 1);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     border-radius: 50%;
-    padding: .1rem;
-    border: 2px solid #9448E8;
-    /* box-shadow: ; */
+    height: 150px;
 }
 
 .card-body {
-    align-self: flex-end;
-    /* just */
-    /* display: flex; */
-    /* flex-direction: column; */
-    /* justify-content: space-evenly; */
-    /* justify-items: stretch; */
-    /* height: 100%; */
-    background-color: #D24FFF;
-    color: white;
-    margin: 0;
     width: 100%;
 }
 
@@ -49,25 +40,26 @@
 }
 
 .card-listitem {
-    border-top: 1px solid white;
-    /* display: flex; */
-    /* justify-content: space-between; */
-    padding: 5px;
+    margin: 10px;
+    padding: 10px;
 }
 
 .card-footer {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
 }
 
 .btn-stats {
-    border: .1rem solid #4F8AFF;
-    background-color: #4F8AFF;
-    color: white;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     width: 100%;
+    margin: 10px;
+    margin-top: 0px;
+    padding: 10px;
+    border-radius: 0px 0px 16px 16px;
+    background-color: #824896;
+    color: white;
 }
 
 .btn-stats:hover, .btn-stats-active {
-    background-color: rgba(0, 0, 0, .5);
+    background-color: rgba(130, 72, 150, .75);
 }

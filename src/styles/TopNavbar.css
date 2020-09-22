@@ -1,9 +1,7 @@
 .top-nav {
-  background-color: #7C5CFF;
-  text-align: center;
+  background-color: #A1BA6C;
   box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
   position: fixed;
-  top: 0;
   overflow: hidden;
   width: 100%;
   display: flex;

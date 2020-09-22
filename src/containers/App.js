@@ -7,6 +7,7 @@ import PokemonModal from '../components/PokemonModal.js';
 import TopNavbar from '../components/TopNavbar';
 import FilterNavbar from '../components/FilterNavbar';
 import PaginationContainer from '../components/PaginationContainer';
+import Footer from '../components/Footer';
 
 // ---------------------------------------------------------------------------
 class App extends Component {
@@ -182,12 +183,11 @@ class App extends Component {
           onSelect={this.handlePaginationSelect}
           pageRange={this.state.pageRange}
         />
+
+        <Footer />
       </>
     );
   }
 }
 
 export default App;
-
-
-

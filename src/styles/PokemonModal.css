@@ -11,17 +11,16 @@
 
 /* Modal Content */
 .modal-content {
+  border-radius: 16px;
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: rgba(92, 233, 255, 1);
-  border: 1px solid #545EE8;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  background-color: rgba(255, 255, 255, 1);
   -webkit-animation-name: animatetop;
-  -webkit-animation-duration: 0.4s;
+  -webkit-animation-duration: 0.2s;
   animation-name: animatetop;
-  animation-duration: 0.4s
+  animation-duration: 0.2s
 }
 
 .display-none {
@@ -33,37 +32,36 @@
 }
 
 .modal-header {
-  padding: 2px 16px;
-  background-color: #9448E8;
-  color: white;
+  padding: 10px;
+  border-radius: 16px;
+  background-color: #989e8c;
   text-transform: capitalize;
-  display: flex;
-  justify-content: space-between;
+  text-align: center;
 }
 
 .modal-body {
-  padding: 2px 16px;
-  /* color: white; */
+  padding: 20px;
 }
 
 .modal-footer {
-  padding: 2px 16px;
+  padding: 5px;
   color: white;
   display: flex;
-  justify-content: center;
+  justify-content: left;
 }
 
 .btn-modal-close {
-  border: 1px solid #4853E8;
-  background-color: rgba(72, 83, 232, 0.7);
+  background-color: #824896;
   color: white;
   width: 100%;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
 }
 
 .btn-modal-close:hover {
-  border: 1px solid #4853E8;
-  background-color: rgba(72, 83, 232, 1);
-  color: white;
+  background-color: rgba(130, 72, 150, .75);
 }
 
 /* Add Animation */
@@ -75,18 +73,4 @@
 @keyframes animatetop {
   from {top:-300px; opacity:0}
   to {top:0; opacity:1}
-}
-
-/* The Close Button */
-.close {
-  color: white;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
-
-.close:hover, .close:focus {
-  color: #4853E8;
-  text-decoration: none;
-  cursor: pointer;
 }

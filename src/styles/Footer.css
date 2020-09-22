@@ -1,0 +1,18 @@
+.footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: #A1BA6C;
+    color:rgb(48, 48, 48);
+}
+
+.api_ref, .copywrite {
+    padding: 10px;
+}
+
+.copywrite {
+    margin-left: 20px;
+}
+
+.api_ref {
+    margin-right: 20px;
+}

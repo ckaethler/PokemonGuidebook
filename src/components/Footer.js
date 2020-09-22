@@ -1,18 +1,21 @@
 // ---------------------------------------------------------------------------
 import React from 'react';
-import '../styles/TopNavbar.css';
-import PokemonLogo from '../images/Pokemon-Guidebook.png'
+import '../styles/Footer.css';
 
 // ---------------------------------------------------------------------------
-const TopNavbar = ({resetDefaults}) => {
+const Footer = () => {
   // -------------------------------------------------------------------------
   return (
-    <header className="top-nav">
-      <img className="top-nav-logo" src={PokemonLogo} alt="PokemonLogo" 
-        id="top-nav-logo" onClick={resetDefaults}/>
-    </header>
+    <footer className="footer">
+      <div className="copywrite">
+        &#169; Catherine Kaethler 2020
+      </div>
+      <div className="api_ref">
+        Information from <a href="https://pokeapi.co">PokeApi</a>
+      </div>
+    </footer>
   );
 }
 
 // ---------------------------------------------------------------------------
-export default TopNavbar;
+export default Footer;
