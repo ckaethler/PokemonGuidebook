@@ -54,6 +54,10 @@
   background-color: #824896;
   color: white;
   width: 100%;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
 }
 
 .btn-modal-close:hover {
