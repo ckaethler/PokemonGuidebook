@@ -2,7 +2,7 @@
 
 PokemonGuidebook is a visual guidebook to the [PokeApi](https://github.com/PokeAPI/pokeapi)
 
-[Click Here](https://pokemon-guide.herokuapp.com) to view it live 
+[Click Here](https://pokemon-guide.herokuapp.com) to view it live (Uses the free version of Heroku - Give it at least a minute to load).
 
 ## Installation
 
