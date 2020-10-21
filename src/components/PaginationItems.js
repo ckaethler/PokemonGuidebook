@@ -12,7 +12,10 @@ const btn_disabled_classes = btn_classes.concat(" btn-disabled");
 
 // ---------------------------------------------------------------------------
 const btnCreate = (key, className, onClick, innerHTML, value) => {
-    return (<button key={key} value={value} className={className} onClick={onClick}>{innerHTML}</button>)
+    return (<button 
+        key={key} value={value} 
+        className={className} 
+        onClick={onClick}>{innerHTML}</button>)
 }
 
 // ---------------------------------------------------------------------------
